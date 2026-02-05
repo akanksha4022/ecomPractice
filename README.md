@@ -1,8 +1,8 @@
-# 🛒 E-commerce Frontend UI Clone
+#  E-commerce Frontend UI Clone
 
 This project is a frontend clone of an e-commerce website built using **React**, **Tailwind CSS**, and the **Platzi Fake Store API**. It includes product listing, filtering, cart and orders functionality, checkout flow, and user authentication using **Firebase**.
 
----
+
 
 ## Features
 
@@ -15,7 +15,7 @@ This project is a frontend clone of an e-commerce website built using **React**,
 - Responsive UI (Desktop & Mobile)  
 - Deployed on Vercel  
 
----
+
 
 ##  Tech Stack
 
@@ -56,7 +56,6 @@ Create a .env file in the root directory and add:
 
 ### 4️. Run the App
 npm run dev
-
 
 The app will start on:
 
