@@ -67,17 +67,24 @@ const Home = () => {
   const handleCloseDetail = () => {
     
     setSelectedProduct(null);
+    setIsDetailOpen(false);
   };
 
 
-  const filteredProducts =
-  selectedCategory === "all"
-    ? products
-    : products.filter(
-        (p) =>
-          p.category?.name
-            .toLowerCase() === selectedCategory
-      );
+  const filteredProducts = products.filter((product) => {
+  const matchesCategory =
+    selectedCategory === "all" ||
+    product.category?.name
+      ?.toLowerCase() === selectedCategory;
+
+    const matchesSearch =
+      product.title
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase());
+
+    return matchesCategory && matchesSearch;
+  });
+
 
 
 
