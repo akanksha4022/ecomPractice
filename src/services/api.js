@@ -7,7 +7,7 @@ const api = axios.create({
     timeout: 10000,
 });
 
-export const getProducts = ()=> api.get("/products?offset=50&limit=100");
+export const getProducts = ()=> api.get("/products");
 
 export const getProductById = (id)=> api.get(`/products/${id}`);
 
